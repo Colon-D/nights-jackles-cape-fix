@@ -1,0 +1,21 @@
+{
+  "ModId": "nights.test.jacklescapefix",
+  "ModName": "Jackle's Cape Fix",
+  "ModAuthor": "",
+  "ModVersion": "1.0.0",
+  "ModDescription": "",
+  "ModDll": "nights.test.jacklescapefix.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/nights.test.jacklescapefix.dll",
+  "ModR2RManagedDll64": "x64/nights.test.jacklescapefix.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "nights.test.jacklescapefix.ReleaseMetadata.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [ "reloaded.sharedlib.hooks" ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [],
+  "ProjectUrl": ""
+}
