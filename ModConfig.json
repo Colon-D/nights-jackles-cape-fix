@@ -14,8 +14,10 @@
   "ReleaseMetadataFileName": "nights.test.jacklescapefix.ReleaseMetadata.json",
   "PluginData": {},
   "IsUniversalMod": false,
-  "ModDependencies": [ "reloaded.sharedlib.hooks" ],
+  "ModDependencies": [ "reloaded.sharedlib.hooks", "reloaded.universal.redirector" ],
   "OptionalDependencies": [],
-  "SupportedAppId": [],
+  "SupportedAppId": [
+    "nights.exe"
+  ],
   "ProjectUrl": ""
 }
