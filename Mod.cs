@@ -56,6 +56,7 @@ public class Mod : ModBase // <= Do not Remove.
 
 		// If you want to implement e.g. unload support in your mod,
 		// and some other neat features, override the methods in ModBase.
+
 		unsafe {
             int* texture_ptr = (int*)0x8A2BD0;
             *texture_ptr += 0x720;
