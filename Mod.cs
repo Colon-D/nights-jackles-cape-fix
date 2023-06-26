@@ -1,5 +1,4 @@
-﻿using Reloaded.Hooks.ReloadedII.Interfaces;
-using Reloaded.Mod.Interfaces;
+﻿using Reloaded.Mod.Interfaces;
 using nights.test.jacklescapefix.Template;
 using nights.test.jacklescapefix.Configuration;
 
@@ -14,12 +13,6 @@ public class Mod : ModBase // <= Do not Remove.
     /// Provides access to the mod loader API.
     /// </summary>
     private readonly IModLoader _modLoader;
-
-    /// <summary>
-    /// Provides access to the Reloaded.Hooks API.
-    /// </summary>
-    /// <remarks>This is null if you remove dependency on Reloaded.SharedLib.Hooks in your mod.</remarks>
-    private readonly IReloadedHooks? _hooks;
 
     /// <summary>
     /// Provides access to the Reloaded logger.
@@ -44,7 +37,6 @@ public class Mod : ModBase // <= Do not Remove.
     public Mod(ModContext context)
     {
         _modLoader = context.ModLoader;
-        _hooks = context.Hooks;
         _logger = context.Logger;
         _owner = context.Owner;
         _configuration = context.Configuration;
@@ -58,12 +50,15 @@ public class Mod : ModBase // <= Do not Remove.
 		// and some other neat features, override the methods in ModBase.
 
 		unsafe {
-            int* texture_ptr = (int*)0x8A2BD0;
-            *texture_ptr += 0x720;
+            const int new_size = 512288;
+            const int orig_size = 510464;
+            int delta = new_size - orig_size; // 0x720;
+			int* texture_ptr = (int*)0x8A2BD0;
+            *texture_ptr += delta;
             int* rigging_ptr = (int*)(0x8A2BD0 + 4);
-            *rigging_ptr += 0x720;
+            *rigging_ptr += delta;
             int* animation_ptr = (int*)(0x8A2BD0 + 8);
-            *animation_ptr += 0x720;
+            *animation_ptr += delta;
         }
 	}
 

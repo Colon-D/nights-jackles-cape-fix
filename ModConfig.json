@@ -1,20 +1,65 @@
 {
   "ModId": "nights.test.jacklescapefix",
-  "ModName": "Jackle's Cape Fix",
-  "ModAuthor": "",
-  "ModVersion": "1.0.0",
-  "ModDescription": "",
+  "ModName": "Jackle\u0027s Cape Fix",
+  "ModAuthor": "Warden and Jordan",
+  "ModVersion": "1.0.1",
+  "ModDescription": "Fixes Jackle\u0027s Cape to not use the prototype model.",
   "ModDll": "nights.test.jacklescapefix.dll",
   "ModIcon": "Preview.png",
   "ModR2RManagedDll32": "x86/nights.test.jacklescapefix.dll",
   "ModR2RManagedDll64": "x64/nights.test.jacklescapefix.dll",
   "ModNativeDll32": "",
   "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": false,
+  "HasExports": false,
   "IsLibrary": false,
   "ReleaseMetadataFileName": "nights.test.jacklescapefix.ReleaseMetadata.json",
-  "PluginData": {},
+  "PluginData": {
+    "GameBananaDependencies": {
+      "IdToConfigMap": {
+        "reloaded.universal.redirector": {
+          "Config": {
+            "ItemType": "Mod",
+            "ItemId": 51225
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Redirector.ReleaseMetadata.json"
+        }
+      }
+    },
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "reloaded.universal.redirector": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Universal.Redirector",
+            "UseReleaseTag": false,
+            "AssetFileName": ""
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Redirector.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    },
+    "GitHubRelease": {
+      "UserName": "Colon-D",
+      "RepositoryName": "nights-jackles-cape-fix",
+      "UseReleaseTag": true,
+      "AssetFileName": "Mod.zip"
+    }
+  },
   "IsUniversalMod": false,
-  "ModDependencies": [ "reloaded.sharedlib.hooks", "reloaded.universal.redirector" ],
+  "ModDependencies": [
+    "reloaded.universal.redirector"
+  ],
   "OptionalDependencies": [],
   "SupportedAppId": [
     "nights.exe"
